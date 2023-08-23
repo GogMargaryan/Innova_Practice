@@ -1,0 +1,1 @@
+// Logic of store js
