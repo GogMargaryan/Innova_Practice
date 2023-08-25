@@ -1,5 +1,9 @@
+import SliderAnimations from "./sliderAnimations/SliderAnimations";
+
 const Home = () => {
-  return <div>Home</div>;
+  return <div>
+    <SliderAnimations />
+  </div>;
 };
 
 export default Home;

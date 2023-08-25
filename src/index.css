@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +9,6 @@
 
 :root {
   --example: red;
+  --bs-orange: #fd9d3e;
+  --narrow-font-family: 'PT Sans Narrow', sans-serif;
 }
