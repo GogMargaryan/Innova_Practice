@@ -1,7 +1,7 @@
-section {
+.slider-section {
     background-image: url('../../../images/sliderBackgroundImage.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center;
+    background-repeat: no-repeat; 
     background-size: cover;
     background-color: #121619;
     font-family: var(--narrow-font-family);
@@ -14,7 +14,7 @@ section {
         .swiper-button-next {
             color: rgba(253, 157, 62, 0.5) !important;
             width: 70px;
-            font-weight: 1000 !important;  // Add this line to make the buttons more bold
+            font-weight: 1000 !important;  
         }
     
         &-page {
