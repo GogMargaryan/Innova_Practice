@@ -1,5 +1,11 @@
+import Speciality from "./speciality/Speciality";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Speciality />
+    </>
+  );
 };
 
 export default Home;
