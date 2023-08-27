@@ -4,6 +4,7 @@
 .speciality {
   max-width: var(--max-width);
   margin: auto;
+  background-color: white;
   &-inner {
     display: flex;
     flex-direction: column;

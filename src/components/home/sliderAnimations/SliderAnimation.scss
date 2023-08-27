@@ -1,646 +1,646 @@
 section {
-    background-image: url('../../../images/sliderBackgroundImage.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    background-color: #121619;
-    font-family: var(--narrow-font-family);
-    .slider {
-        min-height: 800px;
-        max-width: 1500px;
-        position: relative;
-        padding-top: 120px;
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: rgba(253, 157, 62, 0.5) !important;
-            width: 70px;
-            font-weight: 1000 !important;  // Add this line to make the buttons more bold
-        }
-    
-        &-page {
-            h1 {
-                font-size: 150px;
-                color: #fefefe;
-                text-transform: uppercase;
-                font-family: var(--narrow-font-family);
-                font-weight: 700;
-            }
-            h5 {
-                font-size: 24px;
-                color: var(--bs-orange);
-                text-transform: uppercase;
-                letter-spacing: 9px;
-            }
-            .pizzasComponents {
-                position: absolute;
-            }
-        }
-        &-page-1 {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-        }
-        &-page-2 {
-            display: flex;
-        }
-        &-page-3 {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-        &-page-1-title  {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h1 {
-                animation-name: banner1header;
-                animation-duration: 2s;
-                transform: translate3d(0, 20%, 0);
-            }
-            h5 {
-                animation-name: banner1title;
-                animation-duration: 2s;
-                text-align: center;
-                transform: translate3d(0, 100%, 0);
-            }
-        }
-        &-page-1-interface {
-            .pizza {
-                animation-name: banner1pizza;
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-delay: 0.5s;
-            }
-            .potherb1 {
-                animation-name: banner1potherb;
-                max-width: 350px;
-                -webkit-animation-duration: 1.8s;
-                animation-duration: 1.8s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-delay: 1.8s;
-                bottom: 20px;
-                right: 120px;
-            }
-            .potherb2 {
-                animation-name: banner1potherb;
-                max-width: 350px;
-                -webkit-animation-duration: 2s;
-                animation-duration: 2s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-delay: 2s;
-                bottom: 250px;
-                left: 800px;
-            }
-            .potherb3 {
-                animation-name: banner1potherb;
-                max-width: 350px;
-                animation-duration: 3s;
-                animation-fill-mode: both;
-                -webkit-animation-duration: 2.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-delay: 2.5s;
-                bottom: 100px;
-                left: 300px;
-            }
-        }
-        &-page-2-title  {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h1 {
-                animation-name: banner2header;
-                -webkit-animation-duration: .5s;
-                animation-duration: .5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-delay: 0.5s;
-                width: 50%;
-                transform: translate(-50%);
-                z-index: 1;
-                margin-left: 80px; 
-            }
-            
-            h5 {
-                -webkit-animation-duration: .5s;
-                animation-duration: .5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2title;
-                animation-delay: 0.5s;
-                flex: 0 0 50%;
-                position: absolute;
-                padding-left: 85px;
-                bottom: -50px;
-            }
-        }
-        &-page-2-interface {
-            .pizza {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2pizza;
-                animation-delay: 1s;
-                position: absolute;
-                right: 80px;
-            }
-            .onion1 {
-                position: absolute;
-                bottom: -210px;
-                right: 270px;
-                -webkit-animation-duration: 2.5s;
-                animation-duration: 2.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2onion1;
-                animation-delay: 2.5s;
-            }
-            .onion2 {
-                position: absolute;
-                bottom: -100px;
-                right: 60px;
-                -webkit-animation-duration: 1.8s;
-                animation-duration: 1.8s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2onion2;
-                animation-delay: 1.8s;
-            }
-            .onion3 {
-                position: absolute;
-                top: 50px;
-                right: 580px;
-                -webkit-animation-duration: 2s;
-                animation-duration: 2s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2onion3;
-                animation-delay: 2s;
-            }
-            .potherb1 {
-                position: absolute;
-                top: -30px;
-                right: 510px;
-                -webkit-animation-duration: 1.8s;
-                animation-duration: 1.8s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2potherb1;
-                animation-delay: 1.8s;
-            }
-            .tomato1 {
-                top: -70px;
-                right: 60px;
-                -webkit-animation-duration: 1.5s;
-                animation-duration: 1.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2tomato1;
-                animation-delay: 1.3s;
-            }  
-            .tomato2 {
-                bottom: -210px;
-                right: 60px;
-                -webkit-animation-duration: 1.5s;
-                animation-duration: 1.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner2tomato2;
-                animation-delay: 1.5s;
-            }            
-        }
-        &-page-3-title  {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            margin-right: 80px;
-            h1 {
-                position: absolute;
-                top: 80px;
-                -webkit-animation-duration: .5s; 
-                animation-duration: .5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3header;
-                animation-delay: 0.5s;
-            }
-            
-            h5 {
-                -webkit-animation-duration: .8s;
-                animation-duration: .8s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: fadeInRight;
-                animation-delay: 0.8s;
-                margin-top: 450px;
-            }
-        }
-        &-page-3-interface {
-            .pizza {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3pizza;
-                animation-delay: 1s;
-                position: absolute;
-                left: 120px;
-            }
-            .onion1 {
-                position: absolute;
-                top: 80px;
-                left: 80px;
-                -webkit-animation-duration: 1.8s;
-                animation-duration: 1.8s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3onion1;
-                animation-delay: 1.8s;
-            }
-            .onion2 {
-                position: absolute;
-                top: 0px;
-                left: 170px;
-                -webkit-animation-duration: 1.5s;
-                animation-duration: 1.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3onion2;
-                animation-delay: 1.3s;
-            }
-            .paper1 {
-                position: absolute;
-                top: -20px;
-                left: 450px;
-                -webkit-animation-duration: 2s;
-                animation-duration: 2s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3paper1;
-                animation-delay: 2s;
-            }
-            .paper2 {
-                position: absolute;
-                top: 50px;
-                left: 550px;
-                -webkit-animation-duration: 1.5s;
-                animation-duration: 1.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3paper2;
-                animation-delay: 1.5s;
-            }
-            .potherb1 {
-                position: absolute;
-                bottom: -150px;
-                left: 480px;
-                -webkit-animation-duration: 2.5s;
-                animation-duration: 2.5s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3potherb1;
-                animation-delay: 2.5s;
-            }
-            .tomato1 {
-                bottom: -110px;
-                left: 120px;
-                -webkit-animation-duration: 1.8s;
-                animation-duration: 1.8s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                animation-name: banner3tomato1;
-                animation-delay: 1.8s;
-            }             
-        }
+  background-image: url("../../../images/sliderBackgroundImage.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-color: #121619;
+  font-family: var(--narrow-font-family);
+  .slider {
+    min-height: 800px;
+    max-width: 1500px;
+    position: relative;
+    padding-top: 120px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: rgba(253, 157, 62, 0.5) !important;
+      width: 70px;
+      font-weight: 1000 !important; // Add this line to make the buttons more bold
     }
-    .swiper-button-prev:hover,.swiper-button-next:hover {
-        color: var(--bs-orange) !important;
+
+    &-page {
+      h1 {
+        font-size: 150px;
+        color: #fefefe;
+        text-transform: uppercase;
+        font-family: var(--narrow-font-family);
+        font-weight: 700;
+      }
+      h5 {
+        font-size: 24px;
+        color: var(--bs-orange);
+        text-transform: uppercase;
+        letter-spacing: 9px;
+      }
+      .pizzasComponents {
+        position: absolute;
+      }
     }
-}
-@keyframes  banner1header {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
+    &-page-1 {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
     }
-    to {
-        opacity: 1;
+    &-page-2 {
+      display: flex;
+    }
+    &-page-3 {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &-page-1-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        animation-name: banner1header;
+        animation-duration: 2s;
         transform: translate3d(0, 20%, 0);
-    }
-}  
-
-@keyframes  banner1pizza {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 2000px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-
-@keyframes  banner1title {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-    to {
-        opacity: 1;
+      }
+      h5 {
+        animation-name: banner1title;
+        animation-duration: 2s;
+        text-align: center;
         transform: translate3d(0, 100%, 0);
+      }
     }
-} 
+    &-page-1-interface {
+      .pizza {
+        animation-name: banner1pizza;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 0.5s;
+      }
+      .potherb1 {
+        animation-name: banner1potherb;
+        max-width: 350px;
+        -webkit-animation-duration: 1.8s;
+        animation-duration: 1.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 1.8s;
+        bottom: 20px;
+        right: 120px;
+      }
+      .potherb2 {
+        animation-name: banner1potherb;
+        max-width: 350px;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+        bottom: 250px;
+        left: 800px;
+      }
+      .potherb3 {
+        animation-name: banner1potherb;
+        max-width: 350px;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 2.5s;
+        bottom: 100px;
+        left: 300px;
+      }
+    }
+    &-page-2-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        animation-name: banner2header;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-delay: 0.5s;
+        width: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+        margin-left: 80px;
+      }
 
-@keyframes  banner1potherb {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
+      h5 {
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2title;
+        animation-delay: 0.5s;
+        flex: 0 0 50%;
+        position: absolute;
+        padding-left: 85px;
+        bottom: -50px;
+      }
     }
-    to {
-        opacity: 1;
-        transform: none;
+    &-page-2-interface {
+      .pizza {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2pizza;
+        animation-delay: 1s;
+        position: absolute;
+        right: 80px;
+      }
+      .onion1 {
+        position: absolute;
+        bottom: -210px;
+        right: 270px;
+        -webkit-animation-duration: 2.5s;
+        animation-duration: 2.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2onion1;
+        animation-delay: 2.5s;
+      }
+      .onion2 {
+        position: absolute;
+        bottom: -100px;
+        right: 60px;
+        -webkit-animation-duration: 1.8s;
+        animation-duration: 1.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2onion2;
+        animation-delay: 1.8s;
+      }
+      .onion3 {
+        position: absolute;
+        top: 50px;
+        right: 580px;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2onion3;
+        animation-delay: 2s;
+      }
+      .potherb1 {
+        position: absolute;
+        top: -30px;
+        right: 510px;
+        -webkit-animation-duration: 1.8s;
+        animation-duration: 1.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2potherb1;
+        animation-delay: 1.8s;
+      }
+      .tomato1 {
+        top: -70px;
+        right: 60px;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2tomato1;
+        animation-delay: 1.3s;
+      }
+      .tomato2 {
+        bottom: -210px;
+        right: 60px;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner2tomato2;
+        animation-delay: 1.5s;
+      }
     }
-} 
+    &-page-3-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      margin-right: 80px;
+      h1 {
+        position: absolute;
+        top: 80px;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3header;
+        animation-delay: 0.5s;
+      }
 
-@keyframes  banner2header {
-    from {
-        transform-origin: left bottom;
-        transform: rotate3d(0, 0, 1, -45deg);
-        opacity: 0;
+      h5 {
+        -webkit-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: fadeInRight;
+        animation-delay: 0.8s;
+        margin-top: 450px;
+      }
     }
-    to {
-        opacity: 1;
-        transform: none;
+    &-page-3-interface {
+      .pizza {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3pizza;
+        animation-delay: 1s;
+        position: absolute;
+        left: 120px;
+      }
+      .onion1 {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        -webkit-animation-duration: 1.8s;
+        animation-duration: 1.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3onion1;
+        animation-delay: 1.8s;
+      }
+      .onion2 {
+        position: absolute;
+        top: 0px;
+        left: 170px;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3onion2;
+        animation-delay: 1.3s;
+      }
+      .paper1 {
+        position: absolute;
+        top: -20px;
+        left: 450px;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3paper1;
+        animation-delay: 2s;
+      }
+      .paper2 {
+        position: absolute;
+        top: 50px;
+        left: 550px;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3paper2;
+        animation-delay: 1.5s;
+      }
+      .potherb1 {
+        position: absolute;
+        bottom: -150px;
+        left: 480px;
+        -webkit-animation-duration: 2.5s;
+        animation-duration: 2.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3potherb1;
+        animation-delay: 2.5s;
+      }
+      .tomato1 {
+        bottom: -110px;
+        left: 120px;
+        -webkit-animation-duration: 1.8s;
+        animation-duration: 1.8s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        animation-name: banner3tomato1;
+        animation-delay: 1.8s;
+      }
     }
-} 
-
-@keyframes  banner2title {
-    from {
-        transform-origin: left bottom;
-        transform: rotate3d(0, 0, 1, 45deg);
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2pizza {
-    from {
-        opacity: 0;
-        transform: translate3d(200px, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2onion1 {
-    from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2onion2 {
-    from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2onion3 {
-    from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2potherb1 {
-    from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2tomato1 {
-    from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner2tomato2 {
-    from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner3header {
-    from {
-        opacity: 0;
-        transform: translate3d(200px, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+  }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    color: var(--bs-orange) !important;
+  }
+}
+@keyframes banner1header {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 20%, 0);
+  }
 }
 
-@keyframes  banner3title {
-    from {
-        opacity: 0;
-        transform: translate3d(200px, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+@keyframes banner1pizza {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes  banner3pizza {
-    from {
-        opacity: 0;
-        transform: translate3d(-200px, 0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-} 
-
-@keyframes  banner3onion1 {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -3000px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    75% {
-        transform: translate3d(0, -10px, 0);
-    } 
-    90% {
-        transform: translate3d(0, 5px, 0);
-    }
-    100% {
-        transform: none;
-    }
+@keyframes banner1title {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 100%, 0);
+  }
 }
 
-@keyframes  banner3onion2 {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -3000px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    75% {
-        transform: translate3d(0, -10px, 0);
-    } 
-    90% {
-        transform: translate3d(0, 5px, 0);
-    }
-    100% {
-        transform: none;
-    }
+@keyframes banner1potherb {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes  banner3paper1 {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -3000px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    75% {
-        transform: translate3d(0, -10px, 0);
-    } 
-    90% {
-        transform: translate3d(0, 5px, 0);
-    }
-    100% {
-        transform: none;
-    }
+@keyframes banner2header {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes  banner3paper2 {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -3000px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    75% {
-        transform: translate3d(0, -10px, 0);
-    } 
-    90% {
-        transform: translate3d(0, 5px, 0);
-    }
-    100% {
-        transform: none;
-    }
+@keyframes banner2title {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes  banner3tomato1 {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -3000px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    75% {
-        transform: translate3d(0, -10px, 0);
-    } 
-    90% {
-        transform: translate3d(0, 5px, 0);
-    }
-    100% {
-        transform: none;
-    }
+@keyframes banner2pizza {
+  from {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-@keyframes  banner3potherb1 {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -3000px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(0, 25px, 0);
-    }
-    75% {
-        transform: translate3d(0, -10px, 0);
-    } 
-    90% {
-        transform: translate3d(0, 5px, 0);
-    }
-    100% {
-        transform: none;
-    }
+@keyframes banner2onion1 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner2onion2 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner2onion3 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner2potherb1 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner2tomato1 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner2tomato2 {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner3header {
+  from {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner3title {
+  from {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner3pizza {
+  from {
+    opacity: 0;
+    transform: translate3d(-200px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes banner3onion1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes banner3onion2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes banner3paper1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes banner3paper2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes banner3tomato1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes banner3potherb1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: none;
+  }
 }
