@@ -1,0 +1,102 @@
+.latestnews{
+    max-width: var(--max-width);
+    margin: auto;
+    background-color: white;
+    background-image: none ;
+    display: flex;
+    flex-direction: column;
+    
+    &-center{
+      &-title{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        &-event{
+            font-family: 'Pacifico', cursive;
+            font-size: 30px;
+            color: #fd9d3e;
+            padding-bottom: 10px;
+        }
+        &-news{
+            font-size: 70px;
+            color: #1d1d1d;
+            line-height: 58px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+      }
+      &-content{
+        display: flex;
+        &-section{
+            &-img{
+                padding-top: 10px;
+                transition: padding 500ms;
+                height: 320px;
+                &-inner{
+                    position: relative;
+    
+                }
+            }
+            &:hover{
+                .latestnews-center-content-section-img{
+                padding-top: 0px;
+                .img{
+                    box-shadow: -2px 3px 10px 2px gray;
+                }
+            }
+            }
+
+            &-day{
+                width: 68px;
+                height: 68px;
+                background-color: #fd9d3e;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-weight: 700;
+                text-align: center;
+                line-height: 68px;
+                position: absolute;
+                bottom: -30px;
+                right: 40px;
+            }
+            &-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 20px;
+                &-comm{
+                    color: #1d1d1d;
+                    margin-right: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                &-title{
+                    font-size: 20px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #1d1d1d;
+                    margin-top: 20px;
+                }
+                &-title:hover{
+                    color: #fd9d3e;
+                }
+                &-readmore{
+                    color: #fd9d3e;
+                    margin-top: 20px;
+                }
+                &-readmore:hover{
+                    color: #1d1d1d;
+                    
+                }
+            }
+        }
+      }
+        
+    }
+}
