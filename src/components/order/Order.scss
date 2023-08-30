@@ -1,0 +1,53 @@
+.order-section {
+    background-color: var(--bs-orange);
+    position: relative;
+    .top, .bottom {
+        position: absolute;
+        width: 100% !important;
+        margin: 0;
+        z-index: 5;
+    }
+    .top {
+        top: -110px;
+    }
+    .order {
+        max-width: 1500px;
+        position: relative;
+        margin: auto;
+        padding: 20px 150px;
+        &-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            &-card {
+                display: flex;
+                width: 33%;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px 60px;
+                h1 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #121619;
+                    padding-top: 10px;
+                    padding-bottom: 8px;
+                    font-family: var(--narrow-font-family);
+                }
+                img {
+                    max-width: 90px;
+                    transition: filter 0.3s ease;
+                }
+                span {
+                    font-size: 14px;
+                    font-family: var(--narrow-font-family);
+                    color: #121619;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.order-main-card > .icon:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+}
