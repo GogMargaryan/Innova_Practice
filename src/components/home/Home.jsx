@@ -1,4 +1,5 @@
 
+import LatestNews from "./latestNews/LatestNews";
 import SliderAnimations from "./sliderAnimations/SliderAnimations";
 import Speciality from "./speciality/Speciality";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <SliderAnimations />
     
     <Speciality />
+    <LatestNews />
   </div>
 };
 
