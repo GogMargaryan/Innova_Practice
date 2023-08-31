@@ -8,7 +8,7 @@ import latestNewsReducer from "./slices/latestNewsSlice";
 const store = configureStore({
   reducer: {
     speciality: specialityReducer,
-    order: orderReducer
+    order: orderReducer,
     latestNews: latestNewsReducer,
   },
 });
