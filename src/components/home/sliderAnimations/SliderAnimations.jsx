@@ -11,10 +11,8 @@ import 'swiper/css/scrollbar';
 
 const SliderAnimations = () => {
 
-    const [isDragging, setIsDragging] = useState(false);
-
   return (
-    <section>
+    <section className='slider-section'>
         <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={500}

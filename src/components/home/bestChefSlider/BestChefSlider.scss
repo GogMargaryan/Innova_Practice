@@ -1,0 +1,52 @@
+.BestChefSlider {
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+  border: solid;
+  &-textOne {
+    font-size: 25px;
+    color: #fd9d3e;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 10px;
+  
+}
+&-textTwo{
+    font-size: 50px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-transform: uppercase!important;
+}
+  &-Section {
+    >div{
+        display: flex;
+        // padding: 5px;
+        >img{
+            padding: 15px;
+        }
+    }
+  }
+}
+.BestChefSlider-Section-Chefs{
+  &-Name{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  &-Chef{
+    font-size: 12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  >div{
+    padding-left: 31px;
+  >nav{
+    // font-size: 20px;
+    width: 278px;
+    height: 80px;
+    border: solid rgb(255, 255, 255);
+    background-color: white;
+  }
+}
+}
