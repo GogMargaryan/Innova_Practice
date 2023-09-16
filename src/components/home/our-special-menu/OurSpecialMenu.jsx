@@ -8,7 +8,7 @@ const OurSpecialMenu = () => {
             <div className="menu-inner">
                 <div className="menu-inner-info">
                     <p>Fresh From Pizzon</p>
-                    <h1>OUR SPECIAL MENU</h1>
+                    <h3>OUR SPECIAL MENU</h3>
                     <MenuChangeButton />
                 </div>
                 <MenuAssortmant />

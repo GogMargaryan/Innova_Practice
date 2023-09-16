@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Itim&family=Karla&family=Pacifico&family=Poppins:wght@200&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Itim&family=Karla&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Poppins:wght@200&family=Shadows+Into+Light&display=swap");
+
+
+.about-pizzon {
+    max-width: var(--max-width);
+    padding: 42px;
+    margin: 24px auto;
+    min-height: 500px;
+    // border: solid;
+
+    &-inner {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-info {
+            padding: 24px;
+
+            >h4 {
+                color: #fd9d3e;
+                font-family: "Pacifico", cursive;
+                font-size: 32px;
+            }
+
+            >h2 {
+                font-size: 55px;
+            }
+
+            >p {
+                margin-top: 24px;
+                font-size: 16px;
+                color: #121619;
+            }
+        }
+    }
+}
+
+.our-story {
+    background-color: rgb(241, 239, 239);
+    max-width: var(--max-width);
+    padding: 42px;
+    margin: 24px auto;
+    min-height: 500px;
+    // border: solid;
+
+    &-inner {
+        // max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        >h3 {
+            color: #fd9d3e;
+            font-family: "Pacifico", cursive;
+            font-size: 32px;
+        }
+
+        >h1 {
+            font-size: 60px;
+        }
+
+        >p {
+            // display: flex;
+            padding: 24px;
+            margin-top: 24px;
+            font-size: 16px;
+            color: #121619;
+        }
+    }
+}
+
+.modern-cuisine {
+    max-width: var(--max-width);
+    padding: 42px;
+    margin: 24px auto;
+    min-height: 500px;
+    // border: solid;
+
+    &-inner {
+        display: flex;
+        // flex-wrap: wrap;
+
+        >img {
+            max-width: 600px;
+
+            &:hover {
+                // color: gray;
+            }
+        }
+
+        &-info {
+            padding: 24px;
+
+            >h3 {
+                color: #fd9d3e;
+                font-family: "Pacifico", cursive;
+                font-size: 32px;
+            }
+
+            >h1 {
+                font-size: 60px;
+            }
+
+            >p {
+                margin-top: 24px;
+                font-size: 16px;
+                color: #121619;
+            }
+        }
+
+
+
+
+    }
+}

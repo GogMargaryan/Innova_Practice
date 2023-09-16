@@ -27,16 +27,18 @@
 
             }
 
-            >h1 {
+            >h3 {
+                // font-family: ;
                 color: white;
-                font-size: 70px;
+                font-size: 60px;
             }
 
             &-button {
+                margin-top: 24px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                width: 600px;
+                width: 700px;
                 min-height: 40px;
                 border-radius: 50px;
                 background-color: #3d3d3d;
